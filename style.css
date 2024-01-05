@@ -1,0 +1,28 @@
+.letter-box .letter{
+    width: 44px;
+    border-bottom: 4px solid black;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.letter-box .letter.guessed{
+    border-color: transparent;
+    margin: -40px 0 35px;
+}
+.keyboard button{
+    border: 0px solid black;
+    background: rgb(61, 111, 113);
+    width: calc(100% / 9 - 5px);
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: gainsboro;
+    padding: 2px;
+    /* box-shadow: 5px gray; */
+}
+.keyboard button:hover{
+    background: rgb(90, 138, 140);
+}

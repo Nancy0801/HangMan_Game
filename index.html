@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>HangMan Game</title>
+</head> 
+<body class="bg-cyan-700 flex justify-center items-center font-serif min-h-full" >
+    <div class="model fixed bg-black bg-opacity-60 left-0 top-0 w-full h-full hidden flex items-center justify-center">
+        <div class="content bg-white w-96 text-center p-8 rounded-xl">
+            <img src="img/lost.gif" alt="gif" class="max-w-28 ml-24">
+            <h1 class="m-3 font-bold text-xl">Game Over!</h1>
+            <h3 class="font-bold">The correct Word is: rainbow</h3>
+            <button class="play-again bg-gray-300 hover:bg-gray-200 cursor-pointer p-2 rounded-lg mt-4 font-semibold" onclick="playAgain()">Play Again</button>
+        </div>
+    </div>
+    <div class="cont bg-amber-50 flex w-5/6 h-auto px-10 py-16 rounded-xl mt-24 items-center gap-20 flex-col xl:flex-row ">
+        <div class="hangman">
+            <div class="flex items-center justify-center"><img src="img/hangman-0.svg" alt="Loading image" class="max-w-60"></div>
+            <h1 class="text-center mt-6 text-xl font-bold hidden xl:block">HANGMAN GAME</h1>
+        </div>
+        <div class="game-box">
+            <ul class="letter-box flex gap-5 items-center justify-center ">
+                <!-- <li class="letter"></li>
+                <li class="letter"></li>
+                <li class="letter"></li>
+                <li class="letter guessed">a</li>
+                <li class="letter"></li>
+                <li class="letter"></li>
+                <li class="letter"></li>
+                <li class="letter"></li> -->
+            </ul>
+            <h3 class="hint-text text-center mb-4 text-lg font-bold"> HINT: <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eligendi doloremque saepe et</b></h3>
+            <h3 class="guess-text text-center mb-4 text-lg font-semibold">Incorrect Guesses: <b class="text-red-600">0 / 6</b></h3>
+            <div class="keyboard flex flex-wrap gap-2 justify-center">
+
+                <!-- either create keyboard button like this or create by using javascript dynamically -->
+
+                <!-- <button>a</button><button>b</button><button>c</button><button>d</button>
+                <button>e</button><button>f</button><button>g</button><button>h</button>
+                <button>i</button><button>j</button><button>k</button><button>l</button>
+                <button>m</button><button>n</button><button>o</button><button>p</button>
+                <button>q</button><button>r</button><button>s</button><button>t</button>
+                <button>u</button><button>v</button><button>w</button><button>x</button>
+                <button>y</button><button>z</button> -->
+
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>    
+</body>
+</html>
